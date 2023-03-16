@@ -1,0 +1,38 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: 获取代码
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          
+      - name: 展示node版本信息
+        run: node -v
+
+      - name: npm安装
+        run: npm install
+
+      - name: 运行自动化脚本
+        run: bash ./gen.sh
+
+      - name: blog编译
+        run: npm run docs:build
+
+      - name: 部署
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: docs/.vuepress/dist
