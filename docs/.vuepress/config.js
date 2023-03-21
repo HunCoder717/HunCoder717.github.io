@@ -10,7 +10,7 @@ module.exports = {
     // 仅仅是描述
     description: 'Wayne \'s Home',
     head: [
-        ['link', { rel: 'icon', href: 'https://sprintln-1256351233.cos.ap-shanghai.myqcloud.com/img/boy.png' }]
+        ['link', { rel: 'icon', href: 'https://myblog-1317307487.cos.ap-nanjing.myqcloud.com/blogImage/abiaologo.jpg' }]
     ],
     // dev 环境下的ip
     host: '0.0.0.0',
@@ -34,7 +34,7 @@ module.exports = {
         // 搜索框最多显示结果个数
         searchMaxSuggestions: 6,
         // 导航栏 logo
-        logo: 'https://sprintln-1256351233.cos.ap-shanghai.myqcloud.com/img/boy.png',
+        logo: 'https://myblog-1317307487.cos.ap-nanjing.myqcloud.com/blogImage/abiaologo.jpg',
         // 最后一次 git 提交的 时间， （可以使用false 禁用）
         // lastUpdated: "更新时间",
         lastUpdated: false,
@@ -55,7 +55,7 @@ module.exports = {
             //         { text: '公司项目', link: "/story/公司项目" },
             //     ]
             // },
-            { text: '我的简历', link: "/cv/嵌入式" }
+            { text: '我的简历', link: "/cv/软件开发" }
         ],
         displayAllHeaders: true,
         // 侧边栏配置
