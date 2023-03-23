@@ -4,6 +4,10 @@ sidebar: auto
 
 # coding 学习笔记(目录)
 
+## 前端学习
+### JS
+- [基本表格操作](/coding/前端学习/JS/基本表格操作.md)
+
 ## session1_stackAndQueue
 - [code01-设计一个有getMin功能的栈](/coding/session1_stackAndQueue/code01-设计一个有getMin功能的栈.md)
 - [code02-由两个栈组成的队列](/coding/session1_stackAndQueue/code02-由两个栈组成的队列.md)
